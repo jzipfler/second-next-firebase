@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "firebase-admin": "^8.12.1",
     "next": "^9.3.3",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "swr": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.36",
+    "typescript": "^3.9.5"
   }
 }
