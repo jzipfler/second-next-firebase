@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "generate": "next build && next generate",
+    "static": "next build && next export"
   },
   "dependencies": {
     "firebase-admin": "^8.12.1",
