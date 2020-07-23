@@ -1,4 +1,11 @@
 import Head from 'next/head'
+import React from 'react';
+import dynamic from 'next/dynamic';
+
+const DynamicComponentWithNoSSR = dynamic(
+    () => import('../components/Cube'),
+    { ssr: false }
+)
 
 const Home = () => (
   <div className="container">
@@ -7,7 +14,9 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
+
     <main>
+    <DynamicComponentWithNoSSR/>
       <h1 className="title">
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>

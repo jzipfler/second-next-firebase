@@ -1,3 +1,4 @@
+import React from 'react';
 import useSWR from 'swr';
 
 const fetcher = async (request: Request | string, init?: RequestInit) => {
